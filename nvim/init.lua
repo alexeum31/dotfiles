@@ -1,3 +1,2 @@
 require("alex")
-print("hello")
-
+vim.wo.relativenumber = true
