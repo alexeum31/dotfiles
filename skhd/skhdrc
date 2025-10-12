@@ -18,3 +18,9 @@ alt - s : yabai -m display --focus prev; yabai -m window --focus mouse
 
 # Focus next display by arrangement index
 alt - g : yabai -m display --focus next; yabai -m window --focus mouse
+
+# Swap between adjacent windows
+ctrl + alt - h : yabai -m window --swap west
+ctrl + alt - l : yabai -m window --swap east
+ctrl + alt - k : yabai -m window --swap north
+ctrl + alt - j : yabai -m window --swap south
