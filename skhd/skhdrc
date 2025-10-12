@@ -4,11 +4,17 @@ alt - k : yabai -m window --focus north
 alt - h : yabai -m window --focus west
 alt - l : yabai -m window --focus east
 
+# change master width
+alt + shift - h : ~/.config/skhd/resizeWindow.sh -h
+alt + shift - l : ~/.config/skhd/resizeWindow.sh -l
 
+# change split height
+alt + shift - j : ~/.config/skhd/resizeWindow.sh -j
+alt + shift - k : ~/.config/skhd/resizeWindow.sh -k
 
 #Changing monitor focus
 # Focus previous display by arrangement index
-alt - s : yabai -m display --focus west
+alt - s : yabai -m display --focus prev; yabai -m window --focus mouse
 
 # Focus next display by arrangement index
-alt - g : yabai -m display --focus east
+alt - g : yabai -m display --focus next; yabai -m window --focus mouse
