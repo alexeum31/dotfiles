@@ -7,6 +7,9 @@ vim.diagnostic.config({
   severity_sort = true,
 })
 
+vim.g.mapleader = " "
+vim.g.maplocalleader = "\\"
+
 -- Keybindings for diagnostics
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float)
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next)
@@ -33,9 +36,6 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
   end
 end
 vim.opt.rtp:prepend(lazypath)
-
-vim.g.mapleader = " "
-vim.g.maplocalleader = "\\"
 
 -- Setup lazy.nvim
 require("lazy").setup({
@@ -66,6 +66,11 @@ require("lazy").setup({
   },
   {
     "neovim/nvim-lspconfig",
+  },
+  {
+    'nvim-telescope/telescope.nvim',
+    tag = '0.1.8',
+    dependencies = { 'nvim-lua/plenary.nvim' }
   },
 })
 
