@@ -7,5 +7,7 @@ For a Linux Ubuntu machine
 `git clone --recurse-submodules https://github.com/you/dotfiles ~/.dotfiles`
 
 2. Install dependencies 
+
 `cd ~/.dotfiles
+
 ./install.sh`

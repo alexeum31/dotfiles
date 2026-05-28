@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# set zsh as default shell
+chsh -s $(which zsh)
+echo "Shell changed to zsh — log out and back in for it to take effect"
+
 # symlink configs
 ln -sf ~/.dotfiles/i3/config ~/.config/i3/config
 
