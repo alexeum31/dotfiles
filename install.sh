@@ -7,6 +7,7 @@ echo "Shell changed to zsh — log out and back in for it to take effect"
 # symlink configs
 ln -sf ~/.dotfiles/i3/config ~/.config/i3/config
 ln -sf ~/.dotfiles/zsh/.zshrc ~/.zshrc
+ln -sf ~/.dotfiles/tmux/tmux.conf ~/.tmux.conf
 
 # submodules (zsh plugins)
 git submodule update --init --recursive
