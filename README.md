@@ -8,6 +8,7 @@ For a Linux Ubuntu machine
 
 2. Install dependencies 
 
-`cd ~/.dotfiles
-
-./install.sh`
+```
+cd ~/.dotfiles`
+./install.sh
+```

@@ -72,5 +72,17 @@ require("lazy").setup({
     tag = '0.1.8',
     dependencies = { 'nvim-lua/plenary.nvim' }
   },
+  {
+    "nvim-treesitter/nvim-treesitter",
+    build = ":TSUpdate",
+    config = function()
+        vim.treesitter.language.register("lua", "lua")
+        require("nvim-treesitter").setup({
+            ensure_installed = { "lua", "c", "cpp", "bash", "python" },
+            highlight = { enable = true },
+            indent = { enable = true },
+        })
+    end,
+},
 })
 
