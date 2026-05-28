@@ -11,6 +11,8 @@ setopt incappendhistory
 
 # alias
 alias v="nvim"
+alias ls="eza"
+alias ll="eza -la"
 
 # keybinds
 bindkey "^[[1;5C" forward-word   # ctrl+right
