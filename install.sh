@@ -27,3 +27,6 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 
 # eza
 sudo apt install eza
+
+# gdb
+ln -sf ~/.dotfiles/gdb/gdb-dashboard/.gdbinit ~/.gdbinit

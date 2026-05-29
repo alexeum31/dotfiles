@@ -4,3 +4,6 @@
 [submodule "zsh/plugins/zsh-syntax-highlighting"]
 	path = zsh/plugins/zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting
+[submodule "gdb/gdb-dashboard"]
+	path = gdb/gdb-dashboard
+	url = https://github.com/cyrus-and/gdb-dashboard
