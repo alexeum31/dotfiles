@@ -15,6 +15,9 @@ vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float)
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next)
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)
 
+-- code action
+vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action);
+
 -- default browser
 vim.g.mkdp_browser = 'google-chrome'
 
