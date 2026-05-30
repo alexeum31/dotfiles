@@ -4,11 +4,6 @@
 chsh -s $(which zsh)
 echo "Shell changed to zsh — log out and back in for it to take effect"
 
-# symlink configs
-ln -sf ~/.dotfiles/i3/config ~/.config/i3/config
-ln -sf ~/.dotfiles/zsh/.zshrc ~/.zshrc
-ln -sf ~/.dotfiles/tmux/tmux.conf ~/.tmux.conf
-
 # submodules (zsh plugins)
 git submodule update --init --recursive
 
@@ -25,8 +20,13 @@ curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh 
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install --all
 
-# eza
-sudo apt install eza
+# install packages
+sudo apt install -y eza
+sudo apt install -y autorandr
 
-# gdb
+# symlink configs
+ln -sf ~/.dotfiles/i3/config ~/.config/i3/config
+ln -sf ~/.dotfiles/zsh/.zshrc ~/.zshrc
+ln -sf ~/.dotfiles/tmux/tmux.conf ~/.tmux.conf
 ln -sf ~/.dotfiles/gdb/gdb-dashboard/.gdbinit ~/.gdbinit
+ln -sf ~/.dotfiles/autorandr ~/.config/autorandr
