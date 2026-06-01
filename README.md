@@ -1,5 +1,5 @@
 # Alex's Dotfiles
-My configuration environment for Linux Ubuntu
+My configuration environment for Linux Ubuntu 24.04.4 LTS
 
 ## Installation
 
