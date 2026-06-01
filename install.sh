@@ -23,6 +23,8 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 # install packages
 sudo apt install -y eza
 sudo apt install -y autorandr
+sudo apt install pulseaudio-utils brightnessctl # fn keybinds used in i3
+
 
 # symlink configs
 ln -sf ~/.dotfiles/i3/config ~/.config/i3/config
