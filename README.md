@@ -24,4 +24,4 @@ cd ~/.dotfiles
 
 ```
 ./install_perf.sh
-'''
+```
