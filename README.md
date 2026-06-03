@@ -20,3 +20,8 @@ cd ~/.dotfiles
 ./install.sh
 ```
 
+### Optional: Install Perf via kernel source
+
+```
+./install_perf.sh
+'''

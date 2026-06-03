@@ -1,7 +1,7 @@
 PROMPT='%d %# '
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.npm-global/bin:$PATH"
-
+export PERF_SRC="/home/alexeum/src/linux/tools/perf"
 # save history
 HISTFILE=~/.histfile
 HISTSIZE=1000
@@ -13,6 +13,7 @@ setopt incappendhistory
 alias v="nvim"
 alias ls="eza"
 alias ll="eza -la"
+alias perf="$PERF_SRC/perf"
 
 # keybinds
 bindkey "^[[1;5C" forward-word   # ctrl+right
