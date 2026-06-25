@@ -23,9 +23,10 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 # install packages
 sudo apt install -y eza
 sudo apt install -y autorandr
-sudo apt install pulseaudio-utils brightnessctl # fn keybinds used in i3
-sudo apt install htop # CPU profiling
-sudo apt install clangd
+sudo apt install -y pulseaudio-utils brightnessctl # fn keybinds used in i3
+sudo apt install -y htop # CPU profiling
+sudo apt install -y clangd
+sudo apt install -y ripgrep # for <leader>fg nvim, live grep
 
 # symlink configs
 ln -sf ~/.dotfiles/i3/config ~/.config/i3/config
