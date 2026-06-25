@@ -21,6 +21,12 @@ vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action);
 vim.api.nvim_create_autocmd("LspAttach", {
   callback = function(ev)
     vim.keymap.set("n", "gd", vim.lsp.buf.definition, { buffer = ev.buf })
+    vim.keymap.set("n", "<leader>h", function()
+      vim.lsp.buf_request(0, "textDocument/switchSourceHeader", { uri = vim.uri_from_bufnr(0) }, function(err, result)
+        if err or not result then return end
+        vim.cmd("edit " .. vim.uri_to_fname(result))
+      end)
+    end, { buffer = ev.buf })
   end,
 })
 
