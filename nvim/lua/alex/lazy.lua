@@ -18,6 +18,12 @@ vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)
 -- code action
 vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action);
 
+vim.api.nvim_create_autocmd("LspAttach", {
+  callback = function(ev)
+    vim.keymap.set("n", "gd", vim.lsp.buf.definition, { buffer = ev.buf })
+  end,
+})
+
 -- default browser
 vim.g.mkdp_browser = 'google-chrome'
 
