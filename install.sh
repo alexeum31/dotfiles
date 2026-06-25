@@ -25,6 +25,7 @@ sudo apt install -y eza
 sudo apt install -y autorandr
 sudo apt install pulseaudio-utils brightnessctl # fn keybinds used in i3
 sudo apt install htop # CPU profiling
+sudo apt install clangd
 
 # symlink configs
 ln -sf ~/.dotfiles/i3/config ~/.config/i3/config
@@ -32,3 +33,4 @@ ln -sf ~/.dotfiles/zsh/.zshrc ~/.zshrc
 ln -sf ~/.dotfiles/tmux/tmux.conf ~/.tmux.conf
 ln -sf ~/.dotfiles/gdb/gdb-dashboard/.gdbinit ~/.gdbinit
 ln -sf ~/.dotfiles/autorandr ~/.config/autorandr
+ln -sf ~/.dotfiles/claude/settings.json ~/.claude/settings.json
