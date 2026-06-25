@@ -1,5 +1,13 @@
 {
   "theme": "dark",
-  "editorMode": "vim"
+  "editorMode": "vim",
+
+  "permissions": {
+    "allow": [
+      "Read:./",
+      "Write:./",
+      "Bash"
+    ]
+  }
 }
 
