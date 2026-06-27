@@ -31,3 +31,14 @@ source ~/.dotfiles/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.z
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Claude Code alert mode — ask once, on the first shell opened inside tmux
+if [[ -n "$TMUX" && ! -f "$HOME/.tmux-claude-alert" ]]; then
+    echo ""
+    echo "Claude Code: blink tmux status bar when Claude finishes a prompt?"
+    read "REPLY?Enable alert mode? [Y/n]: "
+    case "${REPLY:l}" in
+        n) echo "off" > "$HOME/.tmux-claude-alert" ;;
+        *) echo "on" > "$HOME/.tmux-claude-alert" ;;
+    esac
+fi

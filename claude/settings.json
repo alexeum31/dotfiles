@@ -1,13 +1,28 @@
 {
-  "theme": "dark",
-  "editorMode": "vim",
-
   "permissions": {
     "allow": [
       "Read:./",
       "Write:./",
       "Bash"
     ]
+  },
+  "theme": "dark",
+  "editorMode": "vim",
+  "enabledPlugins": {
+    "clangd-lsp@claude-plugins-official": true
+  },
+  "hooks": {
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [{"type": "command", "command": "bash ~/.claude/hooks/tmux-alert.sh"}]
+      }
+    ],
+    "Notification": [
+      {
+        "matcher": "",
+        "hooks": [{"type": "command", "command": "bash ~/.claude/hooks/tmux-alert.sh"}]
+      }
+    ]
   }
 }
-

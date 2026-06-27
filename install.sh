@@ -35,3 +35,4 @@ ln -sf ~/.dotfiles/tmux/tmux.conf ~/.tmux.conf
 ln -sf ~/.dotfiles/gdb/gdb-dashboard/.gdbinit ~/.gdbinit
 ln -sf ~/.dotfiles/autorandr ~/.config/autorandr
 ln -sf ~/.dotfiles/claude/settings.json ~/.claude/settings.json
+ln -sf ~/.dotfiles/claude/hooks ~/.claude/hooks
