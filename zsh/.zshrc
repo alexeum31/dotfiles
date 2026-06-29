@@ -2,6 +2,7 @@ PROMPT='%d %# '
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.npm-global/bin:$PATH"
 export PERF_SRC="/home/alexeum/src/linux/tools/perf"
+export TSAN_OPTIONS="external_symbolizer_path=$(which llvm-symbolizer) symbolize=1"
 # save history
 HISTFILE=~/.histfile
 HISTSIZE=1000
