@@ -30,6 +30,7 @@ sudo apt install -y ripgrep # for <leader>fg nvim, live grep
 
 # symlink configs
 ln -sf ~/.dotfiles/i3/config ~/.config/i3/config
+ln -sf ~/.dotfiles/i3/i3status.conf ~/.config/i3status/config
 ln -sf ~/.dotfiles/zsh/.zshrc ~/.zshrc
 ln -sf ~/.dotfiles/tmux/tmux.conf ~/.tmux.conf
 ln -sf ~/.dotfiles/gdb/gdb-dashboard/.gdbinit ~/.gdbinit
