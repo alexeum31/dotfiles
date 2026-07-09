@@ -5,8 +5,8 @@ export PERF_SRC="/home/alexeum/src/linux/tools/perf"
 export TSAN_OPTIONS="external_symbolizer_path=$(which llvm-symbolizer) symbolize=1"
 # save history
 HISTFILE=~/.histfile
-HISTSIZE=1000
-SAVEHIST=1000
+HISTSIZE=5000000
+SAVEHIST=5000000
 setopt appendhistory
 setopt incappendhistory
 
